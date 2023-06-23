@@ -7,6 +7,7 @@ const ioServerOptions: Partial<ServerOptions> = {
       `http://localhost:${CLIENT_PORT}`,
       `http://${ADDRESS}:${CLIENT_PORT}`,
       `https://sudok-serv.onrender.com/`,
+      `https://mischuk.github.io/sudok-client/`,
     ],
     methods: ["GET", "POST"],
   },
