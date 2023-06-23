@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "id": "b2c9e0ea-9e22",
+            "name": "user a",
+            "password": "$2a$12$ej4oNXoCyWSoXuKUWGEWtebYbxj4fPeDkM6avH/4HeP9r3/zOM19i"
+        },
+        {
+            "id": "6f869e3e-c0a8",
+            "name": "user b",
+            "password": "$2a$12$ej4oNXoCyWSoXuKUWGEWtebYbxj4fPeDkM6avH/4HeP9r3/zOM19i"
+        }
+    ]
+}
