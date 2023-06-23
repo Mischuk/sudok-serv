@@ -4,7 +4,7 @@
     "description": "A basic typescript app starter for newbies in 2022.",
     "main": "index.js",
     "scripts": {
-        "build": "rimraf ./build && tsc",
+        "build": "tsc",
         "start:dev": "nodemon",
         "start": "npm run build && node build/index.js",
         "lint": "eslint . --ext .ts",
@@ -23,6 +23,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@flydotio/dockerfile": "^0.2.16",
         "@types/bcryptjs": "^2.4.2",
         "@types/config": "^3.3.0",
         "@types/cookie-parser": "^1.4.3",
