@@ -9,7 +9,7 @@ import RouteAuth from "./routes/auth.routes";
 import RouteMessage from "./routes/messages.routes";
 import RouteAll from "./routes/all.routes";
 import { DTO_Players, getRandomPuzzle } from "./utils";
-import { EVENTS, Diff, PORT, GameRow, transformData } from "./lib";
+import { EVENTS, Diff, GameRow, transformData } from "./lib";
 import { Subject } from "rxjs";
 
 const app = express();
@@ -86,7 +86,7 @@ async function start() {
       return progress;
     };
 
-    httpServer.listen(PORT);
+    httpServer.listen();
 
     io.on(EVENTS.COMMON.CONNECTION, (socket) => {
       socket.on(EVENTS.PLAYER.CONNECT.CLIENT, async (data: { id: string }) => {
