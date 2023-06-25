@@ -86,7 +86,9 @@ async function start() {
       return progress;
     };
 
-    httpServer.listen();
+    httpServer.listen((p: any) => {
+      console.log("starting...", p);
+    });
 
     io.on(EVENTS.COMMON.CONNECTION, (socket) => {
       socket.on(EVENTS.PLAYER.CONNECT.CLIENT, async (data: { id: string }) => {
