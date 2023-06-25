@@ -1,5 +1,3 @@
-import cookieParser from "cookie-parser";
-import cors from "cors";
 import express from "express";
 import { createServer } from "http";
 import { Server, Socket } from "socket.io";
@@ -17,8 +15,8 @@ const httpServer = createServer(app);
 const io = new Server(httpServer, ioServerOptions);
 
 app.use(express.json());
-app.use(cors());
-app.use(cookieParser());
+// app.use(cors());
+// app.use(cookieParser());
 
 app.use("/api/auth", RouteAuth);
 app.use("/api/messages", RouteMessage);
